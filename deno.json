@@ -1,0 +1,20 @@
+{
+  "tasks": {
+    "dev": "deno run -A --node-modules-dir npm:vite@5.2.2",
+    "build": "deno run -A --node-modules-dir npm:vite@5.2.2 build"
+  },
+  "imports": {
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@4.2.1",
+    "vite": "npm:vite@5.2.2",
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["dom", "deno.ns"],
+    "types": ["vite/client"]
+  }
+}
